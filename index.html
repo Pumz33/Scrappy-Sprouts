@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrappy Sprouts</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #fffaed;
+            background-color: #1A1A1A;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        header {
+    background-image: url('hero-image.jpg');
+    background-size: cover;           /* Makes image fill the header */
+    background-position: center;      /* Centers the image */
+    background-repeat: no-repeat;     /* Prevents tiling */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    /* Optional: Add a semi-transparent overlay to make text easier to read */
+    position: relative;
+    min-height: 200px;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 150px;
+        padding: 25px 15px;
+    }
+}
+}
+
+/* Optional: Add a dark overlay for better text contrast */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black with 40% opacity */
+    z-index: 1;
+}
+
+header > * {
+    position: relative;
+    z-index: 2;
+}
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #E67E22;
+            border-bottom: 2px solid #D4B483;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .card {
+            background: forestgreen;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #E67E22;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: lightgreen;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        /* MOBILE RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-bottom: 3px;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I Grew Tomatoes With R1 Spent. Here’s How You Can Too.</h1>
+        <p>No garden. No money. No experience. Just kitchen scraps, sunlight, and stubborn hope.</p>
+        <a href="#guide" class="cta-button">Start Your Own Garden →</a>
+    </header>
+
+    <div class="container">
+        <section id="story">
+            <h2>The Story</h2>
+            <p>In November 2025, while job hunting and living lean, I planted seeds from a store-bought tomato in an old yogurt tub. No compost. No fancy soil. Just sand, scraps, and hope.</p>
+            <p>This isn’t a perfect garden. It’s a real one — growing between rocks, fed by banana peels and eggshells, watered with leftover pasta water. And it’s thriving.</p>
+        </section>
+
+        <section id="guide">
+            <h2>The Free Guide</h2>
+            
+            <div class="card">
+                <h3>🪴 My Container</h3>
+                <p>I used a clean, empty yogurt tub with drainage holes poked in the bottom using a nail. Any plastic container with holes will work — even a cut-up water bottle!</p>
+            </div>
+
+            <div class="card">
+                <h3>🌱 My Soil Mix</h3>
+                <p>I mixed my sandy soil with:<br>
+                - Crushed eggshells (calcium!)<br>
+                - Used coffee grounds (nitrogen)<br>
+                - Dried, chopped banana peels (potassium)<br>
+                All free, all from my kitchen.</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Watering on a Budget</h3>
+                <p>I water only when the top inch of soil feels dry (I stick my finger in!). I use cooled, unsalted cooking water — like from boiling potatoes or pasta. It’s full of starches that feed the plant!</p>
+            </div>
+
+            <div class="card">
+                <h3>🌞 Light Hacks</h3>
+                <p>My tomato gets 6+ hours of sun daily. I rotate the pot each morning to face the brightest light. On cloudy days, I prop up aluminum foil behind it to reflect extra sunshine.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍅 Week-by-Week Progress</h3>
+                <p>Week 1: Tiny seedling emerged from kitchen scraps.<br>
+                Week 2: First true leaves appeared — fuzzy and green!<br>
+                Week 3: Stem thickened, now 4 inches tall.<br>
+                *(Add photos here as you go!)*</p>
+            </div>
+        </section>
+
+        <section id="nearby">
+            <h2>What’s Growing Nearby?</h2>
+            <div class="card">
+                <h3>🧅 Wild Onion</h3>
+                <p>Found growing between rocks — smells like onion when rubbed. Perfect for garnishing eggs or stir-fries.</p>
+            </div>
+            <div class="card">
+                <h3>🌿 Lamb’s Quarters</h3>
+                <p>A wild superfood! Broad, diamond-shaped leaves. Mild, spinach-like flavor. I sauté it with garlic — delicious!</p>
+            </div>
+            <div class="card">
+                <h3>🍅 Volunteer Tomato Seedling</h3>
+                <p>Sprouted from last week’s tomato scraps. Proof that life finds a way — even in trash.</p>
+            </div>
+        </section>
+
+        <section id="cta">
+            <h2>Let’s Build Something Together</h2>
+            <p>Inspired? I help small businesses like yours tell their story online — for free, in exchange for a testimonial and portfolio feature.</p>
+            <p>Let’s build your simple, beautiful website together.</p>
+            <a href="mailto:your-email@example.com" class="cta-button">Email Me</a>
+        </section>
+    </div>
+
+    <footer>
+        Built by WebWave Creations | November 2025<br>
+        All photos © Pumeza Ngqukuvana — grown with love, not money.
+    </footer>
+</body>
+</html>
